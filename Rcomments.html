@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Comments to Rocko</title>
+    <meta charset="utf-8">
+
+    <style>
+    	h1 { text-align: center; }
+    	header { background-color: #4dffa6;
+		color: #800080; 
+		padding: 20px; 
+		text-align: right; }
+
+    	body {  text-align: center;
+	    	background-color: #ECDFEC; 
+	    	font-family: Arial, sans-serif; 
+	    	padding:20px; }
+
+    	nav { padding: 20px; }
+
+	form { background-color:#DDA0DD;
+		font-family: Arial, sans-serif;
+		padding: 10px;
+		min-width: 400px; }
+
+	label { float: left;
+	    	width: 150px; 
+	    	clear: left;
+	    	text-align: right; 
+	    	padding-right: 10px;
+	    	margin-top: 10px; }
+
+	input, textarea { margin-top: 10px;
+			  display: block; }
+    </style>
+</head>
+
+<body>
+    <header>
+	<h1>Rocko the WonderDog!</h1>
+	<p><i>...sniffing the grass, one blade at a time</i></p>
+    </header>
+
+    <nav>
+	<a href="Rindex.html">Home</a> &nbsp; 
+	<a href="Rfavs.html">My Favorites</a> &nbsp; 
+	<a href="Rabout.html">About Me</a> &nbsp; 
+	<a href="Rcomments.html">Comments</a>
+    </nav>
+
+    <main>
+	<h2>Now that you know about me...</h2>
+
+	<div class="viz">
+	    <img src="rockoComments.png" height="300" alt="Rocko looking up at camara">
+	</div><br>
+
+	<h2>... tell me what you think!</h2><br>
+
+
+	<p>Please leave a comment for me here:</p>
+	<p>(Required fields marked with an asterisk * )</p>
+
+	<form method="post" action="http://webdevbasics.net/scripts/demo.php">
+	<label for="myName">*Name:</label>
+	    <input type="text" name="myName" id="myName"
+	    required="required" placeholder="your name">
+
+	<label for="myEmail">*E-mail:</label>
+	    <input type="email" name="myEmail" id="myEmail"
+	    required="required" placeholder="youremail@whereever.com">
+
+	<label for="myComments">*Comments:</label>
+	    <textarea name="myComments" id="myComments" rows="2" cols="20" 
+	    required="required"></textarea>
+
+	<input id="mySubmit" type="submit" value="Submit">
+	</form>
+
+
+
+
+
+    </main>
+	
+    <footer>
+	<br><br><br>
+	<small><i>
+	    Copyright &copy; 2019 Rocko the WonderDog<br><br>
+	</i></small>	
+    </footer>
+
+</body>
+</html>
